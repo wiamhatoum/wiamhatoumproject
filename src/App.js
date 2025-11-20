@@ -9,7 +9,7 @@ import About from './pages/About.js';
 import Home from './pages/Home.js';
 import Footer from './components/Footer.js';
 import Feedback from './pages/feedback.js';
-import { HashRouter, Routes , Route } from 'react-router-dom'; 
+import { HashRouter,  Route } from 'react-router-dom'; 
 
 function App() {
   return (
@@ -19,14 +19,14 @@ function App() {
       <HashRouter basename='/wiamhatoumproject'>
         <NavBar /> 
         
-        <Routes>
+        
           <Route path ="/"  exact Component={Home}/>
           <Route path ="/menu"  exact Component={Menu}/>
           <Route path ="/about"  exact Component={About}/>
           <Route path ="/contact"  exact Component={Contact}/>
           <Route path ="/feedback"  exact Component={Feedback}/>
             
-        </Routes>
+        
         
         <Footer />
         </HashRouter>  
