@@ -16,22 +16,22 @@ function App() {
     
      
       <div className="App">
-      <Router>
+      
         <NavBar /> 
         
         <Routes>
 
        
-          <Route path ="/"  exact Component={Home}/>
-          <Route path ="/menu"  exact Component={Menu}/>
-          <Route path ="/about"  exact Component={About}/>
-          <Route path ="/contact"  exact Component={Contact}/>
-          <Route path ="/feedback"  exact Component={Feedback}/>
+          <Route path ="/"  element={<Home/>}/>
+          <Route path ="/menu"  element={<Menu/>}/>
+          <Route path ="/about"  element={<About/>}/>
+          <Route path ="/contact"  element={<Contact/>}/>
+          <Route path ="/feedback"  element={<Feedback/>}/>
             
          </Routes>
         
         <Footer />
-        </Router>  
+        
     </div>
 
   
