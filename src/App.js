@@ -20,11 +20,11 @@ function App() {
         <NavBar /> 
         
         <Routes>
-          <Route path ="/"  element={<Home/>}/>
-          <Route path ="/menu"  element={<Menu />}/>
-          <Route path ="/about"  element={<About />}/>
-          <Route path ="/contact"  element={<Contact />}/>
-          <Route path ="/feedback"  element={<Feedback />}/>
+          <Route path ="/"  exact Component={Home}/>
+          <Route path ="/menu"  exact Component={Menu}/>
+          <Route path ="/about"  exact Component={About}/>
+          <Route path ="/contact"  exact Component={Contact}/>
+          <Route path ="/feedback"  exact Component={Feedback}/>
             
         </Routes>
         
