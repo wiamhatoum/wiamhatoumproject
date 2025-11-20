@@ -16,7 +16,7 @@ function App() {
     
      
       <div className="App">
-      <HashRouter>
+      <HashRouter basename='/wiamhatoumproject'>
         <NavBar /> 
         
         <Routes>
