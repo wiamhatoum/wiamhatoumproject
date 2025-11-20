@@ -9,27 +9,29 @@ import About from './pages/About.js';
 import Home from './pages/Home.js';
 import Footer from './components/Footer.js';
 import Feedback from './pages/feedback.js';
-import { HashRouter,  Route } from 'react-router-dom'; 
+import { BrowserRouter as Router, Routes,  Route } from 'react-router-dom'; 
 
 function App() {
   return (
     
      
       <div className="App">
-      <HashRouter basename='/wiamhatoumproject'>
+      <Router>
         <NavBar /> 
         
-        
+        <Routes>
+
+       
           <Route path ="/"  exact Component={Home}/>
           <Route path ="/menu"  exact Component={Menu}/>
           <Route path ="/about"  exact Component={About}/>
           <Route path ="/contact"  exact Component={Contact}/>
           <Route path ="/feedback"  exact Component={Feedback}/>
             
-        
+         </Routes>
         
         <Footer />
-        </HashRouter>  
+        </Router>  
     </div>
 
   
