@@ -9,14 +9,14 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Feedback from './pages/feedback';
-import {BrowserRouter as Router , Routes , Route } from 'react-router-dom'; 
+import {BrowserRouter as Router , Routes , Route, BrowserRouter, HashRouter } from 'react-router-dom'; 
 
 function App() {
   return (
     
      
       <div className="App">
-      <Router>
+      <HashRouter>
         <NavBar /> 
         
         <Routes>
@@ -28,7 +28,7 @@ function App() {
         </Routes>
        
         <Footer />
-        </Router>     
+        </HashRouter>     
     </div>
 
   

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://wiamhatoum.github.io/wiamhatoumproject",
   
   "name": "resto-cafe",
   
@@ -50,7 +51,8 @@
   },
   
   "scripts": {
-  
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     
   "start": "react-scripts start",
   
