@@ -1,0 +1,20 @@
+import React from "react";
+
+function MenuItem({ image, name, ingredients, price }) {
+  return (
+    <div className="menuItem">
+      <div className="menuItem-image">
+        <img src={image} alt={name} />
+      </div>
+
+      <div className="menuItem-content">
+        <h3>{name}</h3>
+        <p>{ingredients}</p>
+      </div>
+
+      <span className="menuItem-price">${price}</span>
+    </div>
+  );
+}
+
+export default MenuItem;
