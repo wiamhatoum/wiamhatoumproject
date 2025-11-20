@@ -16,9 +16,9 @@ function App() {
     
      
       <div className="App">
-      
+      <HashRouter basename='/wiamhatoumproject'>
         <NavBar /> 
-        <HashRouter>
+        
         <Routes>
           <Route path ="/"  element={<Home/>}/>
           <Route path ="/menu"  element={<Menu />}/>
@@ -27,9 +27,9 @@ function App() {
           <Route path ="/feedback"  element={<Feedback />}/>
             
         </Routes>
-        </HashRouter>  
-        <Footer />
         
+        <Footer />
+        </HashRouter>  
     </div>
 
   
